@@ -26,11 +26,11 @@
             <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-6">
                 <!-- Total Task  -->
                 <div class="bg-white p-6 rounded-lg shadow-sm border-b border-gray-100">
-                    <h3 class="text- font-medium text-gray-500 mb-3">TOTAL TASK</h3>
+                    <h3 class="text-lg font-medium text-gray-500 mb-3">TOTAL TASK</h3>
                     <div class="flex justify-between items-start">
                         <div>
                             <p class="text-4xl font-semibold mb-3">3</p>
-                            <p class="text-sm text-gray-500">111 last month</p>
+                            <p class="text-base text-gray-500">111 last month</p>
                         </div>
                         <div class="p-3 rounded-full bg-blue-100 text-blue-600">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6">
@@ -42,11 +42,11 @@
                 </div>
                 <!-- Completed Task  -->
                 <div class="bg-white p-6 rounded-lg shadow-sm border-b border-gray-100">
-                    <h3 class="text- font-medium text-gray-500 mb-3">COMPLETED TASK</h3>
+                    <h3 class="text-lg font-medium text-gray-500 mb-3">COMPLETED TASK</h3>
                     <div class="flex justify-between items-start">
                         <div>
                             <p class="text-4xl font-semibold mb-3">1</p>
-                            <p class="text-sm text-gray-500">111 last month</p>
+                            <p class="text-base text-gray-500">111 last month</p>
                         </div>
                         <div class="p-3 rounded-full bg-green-100 text-green-600">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6">
@@ -59,11 +59,11 @@
                 </div>
                 <!--Task IN Progress -->
                 <div class="bg-white p-6 rounded-lg shadow-sm border-b border-gray-100">
-                    <h3 class="text- font-medium text-gray-500 mb-3">TASK IN PROGRESS</h3>
+                    <h3 class="text-lg font-medium text-gray-500 mb-3">TASK IN PROGRESS</h3>
                     <div class="flex justify-between items-start">
                         <div>
                             <p class="text-4xl font-semibold mb-3">1</p>
-                            <p class="text-sm text-gray-500">111 last month</p>
+                            <p class="text-base text-gray-500">111 last month</p>
                         </div>
                         <div class="p-3 rounded-full bg-yellow-100 text-yellow-600">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6">
@@ -76,11 +76,11 @@
                 </div>
                 <!-- ToDos -->
                 <div class="bg-white p-6 rounded-lg shadow-sm border-b border-gray-100">
-                    <h3 class="text- font-medium text-gray-500 mb-3">TODOS</h3>
+                    <h3 class="text-lg font-medium text-gray-500 mb-3">TODOS</h3>
                     <div class="flex justify-between items-start">
                         <div>
                             <p class="text-4xl font-semibold mb-3">1</p>
-                            <p class="text-sm text-gray-500">111 last month</p>
+                            <p class="text-base text-gray-500">111 last month</p>
                         </div>
                         <div class="p-3 rounded-full bg-purple-100 text-purple-600">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6">
@@ -94,17 +94,57 @@
             
             <!-- Tasks Table -->
              <section class="bg-white rounded-xl shadow-sm ">
-                <div class="p-4 grid grid-cols-4 border-b border-gray-100 text-base text-gray-500 font-medium">
+                <div class="p-4 grid grid-cols-4 border-b border-gray-100 text-lg text-gray-500 font-medium">
                     <div>TASK TITLE</div>
                     <div>PRIORITY</div>
                     <div>TEAM</div>
                     <div>CREATED AT</div>
                 </div>
                <div class="">
-                <div class="grid grid-cols-4 p-4 ">
+                <div class="grid grid-cols-4 p-4 items-center border-b border-gray-100 ">
                     <div class="flex items-center gap-3">
                         <div class="w-3 h-3 rounded-full bg-green-600"></div>
-                        <span>Test Low Task</span>
+                        <p class="text-lg font-medium">Test Low Task</p>
+                    </div>
+                    <div ><span class="py-1 px-5 font-medium rounded-xl bg-blue-100 text-blue-600   ">Low</span></div>
+                    <div class="flex items-center -space-x-2">
+                        <div class="flex justify-center items-center w-8 h-8 text-sm border-2 border-white bg-blue-500 text-white rounded-full">CA</div>
+                        <div class="flex justify-center items-center w-8 h-8 text-sm border-2 border-white bg-blue-500 text-white rounded-full">JS</div>
+                        <div class="flex justify-center items-center w-8 h-8 text-sm border-2 border-white bg-blue-500 text-white rounded-full">B</div>
+                    </div>
+                    <div class="text-gray-500 text-xl font-medium">
+                        <span>9 months ago</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-4 p-4 items-center border-b border-gray-100">
+                    <div class="flex items-center gap-3">
+                        <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                        <p class="text-lg font-medium">Test Task</p>
+                    </div>
+                    <div ><span class="py-1 px-5 font-medium rounded-xl bg-gray-100 text-gray-600   ">Normal</span></div>
+                    <div class="flex items-center -space-x-2">
+                        <div class="flex justify-center items-center w-8 h-8 text-sm border-2 border-white bg-blue-500 text-white rounded-full">CA</div>
+                        <div class="flex justify-center items-center w-8 h-8 text-sm border-2 border-white bg-blue-500 text-white rounded-full">EB</div>
+                        <div class="flex justify-center items-center w-8 h-8 text-sm border-2 border-white bg-blue-500 text-white rounded-full">B</div>
+                    </div>
+                    <div class="text-gray-500 text-xl font-medium">
+                        <span>9 months ago</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-4 p-4 items-center ">
+                    <div class="flex items-center gap-3">
+                        <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                        <p class="text-lg font-medium">Test Task</p>
+                    </div>
+                    <div ><span class="py-1 px-5 font-medium rounded-xl bg-rose-100 text-red-600   ">High</span></div>
+                    <div class="flex items-center -space-x-2">
+                        <div class="flex justify-center items-center w-8 h-8 text-sm border-2 border-white bg-blue-500 text-white rounded-full">CA</div>
+                        <div class="flex justify-center items-center w-8 h-8 text-sm border-2 border-white bg-blue-500 text-white rounded-full">JS</div>
+                        <div class="flex justify-center items-center w-8 h-8 text-sm border-2 border-white bg-blue-500 text-white rounded-full">AJ</div>
+                        <div class="flex justify-center items-center w-8 h-8 text-sm border-2 border-white bg-blue-500 text-white rounded-full">B</div>
+                    </div>
+                    <div class="text-gray-500 text-xl font-medium">
+                        <span>9 months ago</span>
                     </div>
                 </div>
                </div>
